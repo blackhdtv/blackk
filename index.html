@@ -833,7 +833,7 @@ Bizi takip edin:
                 $('.mac').removeClass('aktif');
                 $(this).addClass('aktif');
                 var index = $(this).attr('data-index');
-                //// lastSource = 'https://edge6.xmediaget.com/hls-live/xmlive/_definst_/' + matches[index]['play'] + '/' + matches[index]['play'] + '.m3u8?refid=1983';
+                lastSource = 'https://edge6.xmediaget.com/hls-live/xmlive/_definst_/' + matches[index]['play'] + '/' + matches[index]['play'] + '.m3u8?refid=1983';
                 lastYayinType = 'player';
                 switchScreen('reklam');
 
@@ -919,7 +919,13 @@ Bizi takip edin:
             $(document).on('click', '.mac', function () {
                 $(window).scrollTop($('#yayinSection').offset().top);
             });
+
+
+
         });
+
+
+
     </script>
 <div id="displayDivId" style="display: none;">
 <!--<iframe frameborder="0" height="29" scrolling="no" src="/sayac.html" width="91"></iframe>-->
